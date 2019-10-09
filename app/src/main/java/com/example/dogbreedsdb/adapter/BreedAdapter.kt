@@ -51,7 +51,7 @@ class BreedAdapter(private val breedList: MutableList<Breeds>, private val breed
         val breedName: TextView? = view.findViewById(R.id.breedName_textview)
         val breedGroup: TextView? = view.findViewById(R.id.breedGroup_textview)
         val breedHeight: TextView? = view.findViewById(R.id.height_textview)
-        val breedWeight: TextView? = view.findViewById(R.id.weight_edittext)
+        val breedWeight: TextView? = view.findViewById(R.id.weight_textview)
         val breedLifespan: TextView? = view.findViewById(R.id.lifeSpan_textview)
         val viewGroup: ConstraintLayout? = view.findViewById(R.id.allBreeds_recyclerview)
 
