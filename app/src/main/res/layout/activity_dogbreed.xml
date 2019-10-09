@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    tools:context=".view.DogBreedActivity">
+
+    <TextView
+        android:id="@+id/titleBreed_textview"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:textSize="36dp"
+        android:textColor="#185C1E"
+        android:text="Your Dog Breed Editor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/nameeditor_edittext"/>
+
+
+    <EditText
+        android:id="@+id/nameeditor_edittext"
+        android:textColor="#185C1E"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Name of the breed"
+        app:layout_constraintTop_toBottomOf="@+id/titleBreed_textview"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/breedgroupeditor_edittext"/>
+
+
+    <EditText
+        android:id="@+id/breedgroupeditor_edittext"
+        android:textColor="#185C1E"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Dog Breed Group"
+        app:layout_constraintTop_toBottomOf="@+id/nameeditor_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/height_edittext"/>
+
+
+    <EditText
+        android:id="@+id/height_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Height"
+        android:textColor="#185C1E"
+        app:layout_constraintTop_toBottomOf="@+id/breedgroupeditor_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/weight_edittext"/>
+
+    <EditText
+        android:id="@+id/weight_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Weight"
+        android:textColor="#185C1E"
+        app:layout_constraintTop_toBottomOf="@+id/height_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/lifespanEditor_edittext"/>
+
+    <EditText
+        android:id="@+id/lifespanEditor_edittext"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Life Span"
+        android:textColor="#185C1E"
+        app:layout_constraintTop_toBottomOf="@+id/weight_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/saveEditor_button"/>
+
+    <Button
+        android:id="@+id/saveEditor_button"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_margin="8dp"
+        android:text="Save"
+        android:onClick="onClick"
+        android:textColor="#185C1E"
+        app:layout_constraintTop_toBottomOf="@+id/lifespanEditor_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
