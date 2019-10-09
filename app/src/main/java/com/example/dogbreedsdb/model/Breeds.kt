@@ -10,4 +10,4 @@ data class Breeds (
     val height: String? ,
     val weight: String? ,
     val lifespan: String? ,
-    var favorite : String? = "False") :Parcelable
+    var favorite : String? = "FALSE") :Parcelable
