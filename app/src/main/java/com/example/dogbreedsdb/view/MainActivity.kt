@@ -21,9 +21,7 @@ import kotlinx.android.synthetic.main.content_main.*
 class MainActivity : AppCompatActivity(), BreedAdapter.BreedAdapterDelegate {
 
     var breedList = mutableListOf(Breeds("Labrador", "Family Dog", "60 cm", "90 pounds", "7 years"))
-    var filteredList = mutableListOf(Breeds("Labrador", "Family Dog", "60 cm", "90 pounds", "7 years"))
-
-    
+    val filteredList: List<Breeds> = breedList.filter { it.favorite == "true" }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -98,7 +96,7 @@ class MainActivity : AppCompatActivity(), BreedAdapter.BreedAdapterDelegate {
                 return true
             }
             R.id.action_settings_favorites -> {
-                setUpView(filteredList)
+                setUpView(filteredList.toMutableList())
                 return true
             }
         }
